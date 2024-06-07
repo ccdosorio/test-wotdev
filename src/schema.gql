@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  name: String!
+  email: String!
+  companyId: String!
+  company: Company!
+}
+
+type Company {
+  id: String!
+  name: String!
+  users: [User!]
+}
+
+type Query {
+  getUsers(companyId: String): [User!]!
+  getCompanies: [Company!]!
+  getCompany(id: String!): Company!
+}
+
+type Mutation {
+  createUser(name: String!, email: String!, companyId: String): User!
+  createCompany(name: String!): Company!
+}
