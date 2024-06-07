@@ -39,6 +39,10 @@ El api se levantara en la URL:
 http://localhost:3000/graphql
 ```
 
+## [Querys](./querys.md)
+
+
+
 ## Datos de Contacto
 
 - Nombre: Christian Osorio
